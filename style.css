@@ -2209,10 +2209,16 @@ button {
         display: none;
     }
 
-    .services-grid,
-    .work-grid,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .expertise-grid {
@@ -2309,6 +2315,15 @@ button {
 
     .section-title {
         font-size: 1.9rem;
+    }
+
+    .services-grid,
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-card {
@@ -2670,8 +2685,8 @@ select:focus-visible {
 
 .profile-image-badge {
     position: absolute;
-    bottom: 24px;
-    left: 24px;
+    top: 5px;
+    left: 5px;
     background: rgba(8, 9, 11, 0.9);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-gold);
@@ -2724,7 +2739,7 @@ select:focus-visible {
 /* Expertise Section */
 .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -2953,7 +2968,12 @@ select:focus-visible {
 
     .profile-meta {
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .profile-meta-item {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 140px;
     }
 }
 
@@ -3005,7 +3025,7 @@ select:focus-visible {
     }
 
     .expertise-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .philosophy-card {
@@ -3055,6 +3075,15 @@ select:focus-visible {
 
     .profile-role {
         font-size: 1rem;
+    }
+
+    .profile-meta-item {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .profile-intro {
