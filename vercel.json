@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/profiles/:name",
+      "destination": "/profiles/:name.html"
+    },
+    {
+      "source": "/:name",
+      "destination": "/:name.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}

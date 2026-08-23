@@ -1,0 +1,6 @@
+# Remove .html extension
+/profiles/*.html /profiles/:s 301
+/*.html /:s 301
+
+# Handle index.html
+/index.html / 301
