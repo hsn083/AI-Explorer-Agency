@@ -1,0 +1,11 @@
+# Redirect .html URLs to clean URLs
+/profiles/*.html /profiles/:sname 301
+/*.html /:sname 301
+
+# Redirect index.html to root
+/index.html / 301
+
+# Handle clean URLs - serve .html files
+/profiles/:name /profiles/:name.html 200
+/:name /:name.html 200
+/ /index.html 200
