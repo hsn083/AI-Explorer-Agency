@@ -1,6 +1,11 @@
-# Remove .html extension
-/profiles/*.html /profiles/:s 301
-/*.html /:s 301
+# Redirect .html URLs to clean URLs
+/profiles/*.html /profiles/:sname 301
+/*.html /:sname 301
 
-# Handle index.html
+# Redirect index.html to root
 /index.html / 301
+
+# Handle clean URLs - serve .html files
+/profiles/:name /profiles/:name.html 200
+/:name /:name.html 200
+/ /index.html 200
