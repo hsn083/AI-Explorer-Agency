@@ -49,8 +49,12 @@ export const metadata: Metadata = {
     google: "tF-aEdEC2WiNKXms4UqZBe4nYvMQEE93HNTZee0fjpg",
   },
   icons: {
-    icon: '/assets/logo.png',
-    apple: '/assets/logo.png',
+    icon: [
+      { url: '/assets/logo.png', sizes: 'any', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/assets/logo.png', sizes: '180x180', type: 'image/png' }
+    ],
   },
 };
 
