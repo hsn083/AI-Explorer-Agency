@@ -1,0 +1,44 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <Link href="/#home" className="footer-logo">
+              <img src="/assets/logo.png" alt="AI Explorer Agency Logo" className="footer-logo-img" />
+              <span className="footer-agency-name">AI EXPLORER AGENCY</span>
+            </Link>
+
+            <p className="footer-description">
+              Building modern websites, AI solutions, and digital experiences for businesses ready to move forward.
+            </p>
+          </div>
+
+          <div className="footer-links">
+            <div className="footer-column">
+              <h4>Explore</h4>
+              <Link href="/#about">About</Link>
+              <Link href="/#services">Services</Link>
+              <Link href="/#work">Projects</Link>
+              <Link href="/#team">Team</Link>
+            </div>
+
+            <div className="footer-column">
+              <h4>Start</h4>
+              <Link href="/#contact">Contact</Link>
+              <Link href="/#work">Our Work</Link>
+              <a href="mailto:hello@aiexplorer.website">Email Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>&copy; 2026 AI Explorer Agency. All rights reserved.</p>
+          <span>Designed &amp; built with purpose.</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
