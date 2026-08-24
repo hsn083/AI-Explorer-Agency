@@ -28,19 +28,19 @@ export default function ProfileNavbar() {
         </Link>
 
         <div className={`profile-nav-links${menuOpen ? " active" : ""}`}>
-          <Link href="/about" className="profile-nav-link" onClick={closeMenu}>
+          <Link href="/#about" className="profile-nav-link" onClick={closeMenu}>
             About
           </Link>
-          <Link href="/services" className="profile-nav-link" onClick={closeMenu}>
+          <Link href="/#services" className="profile-nav-link" onClick={closeMenu}>
             Services
           </Link>
-          <Link href="/work" className="profile-nav-link" onClick={closeMenu}>
+          <Link href="/#work" className="profile-nav-link" onClick={closeMenu}>
             Projects
           </Link>
-          <Link href="/team" className="profile-nav-link" onClick={closeMenu}>
+          <Link href="/#team" className="profile-nav-link" onClick={closeMenu}>
             Team
           </Link>
-          <Link href="/contact" className="profile-nav-cta" onClick={closeMenu}>
+          <Link href="/#contact" className="profile-nav-cta" onClick={closeMenu}>
             Get Started
           </Link>
         </div>
