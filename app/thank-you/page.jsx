@@ -18,6 +18,9 @@ export default function ThankYouPage() {
               height={42}
               className="logo-img"
               priority
+              loading="eager"
+              fetchPriority="high"
+              quality={80}
             />
             <span className="agency-name">AI EXPLORER AGENCY</span>
           </Link>
@@ -34,6 +37,9 @@ export default function ThankYouPage() {
               height={58}
               className="hero-logo-img"
               priority
+              loading="eager"
+              fetchPriority="high"
+              quality={80}
             />
           </div>
 
@@ -64,6 +70,7 @@ export default function ThankYouPage() {
                 width={42}
                 height={42}
                 className="footer-logo"
+                quality={75}
               />
               <span className="footer-name">AI EXPLORER AGENCY</span>
             </div>

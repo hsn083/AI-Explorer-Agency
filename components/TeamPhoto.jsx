@@ -15,6 +15,7 @@ export default function TeamPhoto({ src, alt }) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
           className="object-cover"
+          quality={75}
           onError={() => setFailed(true)}
         />
       )}

@@ -24,6 +24,9 @@ export default function HomePage() {
                 height={58}
                 className="hero-logo-img"
                 priority
+                loading="eager"
+                fetchPriority="high"
+                quality={80}
               />
             </div>
 
@@ -213,6 +216,7 @@ export default function HomePage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
+                      quality={75}
                     />
                     <span className="project-category">{project.category}</span>
                   </div>

@@ -14,6 +14,7 @@ export default function Footer() {
                 width={42}
                 height={42}
                 className="footer-logo-img"
+                quality={75}
               />
               <span className="footer-agency-name">AI Explorer Agency</span>
             </Link>

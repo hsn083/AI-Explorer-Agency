@@ -30,6 +30,9 @@ export default function ProfileNavbar() {
             width={42}
             height={42}
             priority
+            loading="eager"
+            fetchPriority="high"
+            quality={80}
           />
           <span className="profile-nav-name">AI EXPLORER AGENCY</span>
         </Link>

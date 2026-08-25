@@ -55,6 +55,10 @@ export default async function ProfilePage({ params }) {
                 width={400}
                 height={400}
                 priority
+                loading="eager"
+                fetchPriority="high"
+                quality={80}
+                sizes="(max-width: 768px) 100vw, 400px"
               />
               <div className="profile-image-badge">{member.badge}</div>
             </div>

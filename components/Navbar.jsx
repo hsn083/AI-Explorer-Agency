@@ -31,6 +31,9 @@ export default function Navbar() {
             height={42}
             className="logo-img"
             priority
+            loading="eager"
+            fetchPriority="high"
+            quality={80}
           />
           <span className="agency-name">AI Explorer Agency</span>
         </Link>

@@ -11,6 +11,7 @@ export default function ProfileFooter() {
             alt="AI Explorer Logo" 
             width={42}
             height={42}
+            quality={75}
           />
           <span className="profile-footer-name">AI EXPLORER AGENCY</span>
         </div>

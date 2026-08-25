@@ -2582,16 +2582,8 @@ select:focus-visible {
 }
 
 .profile-hero-content {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    opacity: 1;
+    transform: none;
 }
 
 .profile-eyebrow {
@@ -2666,16 +2658,8 @@ select:focus-visible {
 /* Profile Hero Image */
 .profile-hero-image {
     position: relative;
-    opacity: 0;
-    transform: scale(0.95);
-    animation: fadeInScale 1s ease 0.3s forwards;
-}
-
-@keyframes fadeInScale {
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    opacity: 1;
+    transform: none;
 }
 
 .profile-image-wrapper {
