@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -16,7 +17,14 @@ export default function HomePage() {
         <section id="home" className="hero">
           <div className="hero-container">
             <div className="hero-logo">
-              <img src="/assets/logo.png" alt="AI Explorer Agency" className="hero-logo-img" />
+              <Image 
+                src="/assets/logo.webp" 
+                alt="AI Explorer Agency" 
+                width={58}
+                height={58}
+                className="hero-logo-img"
+                priority
+              />
             </div>
 
             <span className="hero-eyebrow">AI • Web • Digital Solutions</span>
@@ -199,10 +207,12 @@ export default function HomePage() {
                 <article className="work-card" key={project.number}>
                   <div className="work-image">
                     <div className="work-image-overlay"></div>
-                    <img
+                    <Image
                       src={project.image}
                       alt={`${project.title} - ${project.category} project by AI Explorer Agency`}
-                      loading="lazy"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
                     />
                     <span className="project-category">{project.category}</span>
                   </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,13 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link href="/#home" className="footer-logo">
-              <img src="/assets/logo.png" alt="AI Explorer Agency Logo" className="footer-logo-img" />
+              <Image 
+                src="/assets/logo.webp" 
+                alt="AI Explorer Agency Logo" 
+                width={42}
+                height={42}
+                className="footer-logo-img"
+              />
               <span className="footer-agency-name">AI Explorer Agency</span>
             </Link>
 

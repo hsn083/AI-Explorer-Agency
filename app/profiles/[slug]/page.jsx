@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import ProfileNavbar from "@/components/ProfileNavbar";
 import ProfileFooter from "@/components/ProfileFooter";
 import { teamMembers, getTeamMember } from "@/lib/data";
@@ -48,7 +49,13 @@ export default async function ProfilePage({ params }) {
 
           <div className="profile-hero-image">
             <div className="profile-image-wrapper">
-              <img src={member.image} alt={`${member.name} - ${member.role}`} />
+              <Image 
+                src={member.image} 
+                alt={`${member.name} - ${member.role}`} 
+                width={400}
+                height={400}
+                priority
+              />
               <div className="profile-image-badge">{member.badge}</div>
             </div>
           </div>

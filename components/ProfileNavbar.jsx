@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProfileNavbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,13 @@ export default function ProfileNavbar() {
     <nav className={`profile-navbar${scrolled ? " scrolled" : ""}`}>
       <div className="profile-nav-container">
         <Link href="/" className="profile-nav-logo">
-          <img src="/assets/logo.png" alt="AI Explorer Logo" />
+          <Image 
+            src="/assets/logo.webp" 
+            alt="AI Explorer Logo" 
+            width={42}
+            height={42}
+            priority
+          />
           <span className="profile-nav-name">AI EXPLORER AGENCY</span>
         </Link>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,14 @@ export default function Navbar() {
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="nav-container">
         <Link href="/#home" className="nav-logo" onClick={closeMenu}>
-          <img src="/assets/logo.png" alt="AI Explorer Agency Logo" className="logo-img" />
+          <Image 
+            src="/assets/logo.webp" 
+            alt="AI Explorer Agency Logo" 
+            width={42}
+            height={42}
+            className="logo-img"
+            priority
+          />
           <span className="agency-name">AI Explorer Agency</span>
         </Link>
 

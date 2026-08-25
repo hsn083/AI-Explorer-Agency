@@ -28,7 +28,7 @@ export const metadata = {
     images: ["https://www.aiexplorer.agency/assets/logo.png"],
   },
   icons: {
-    icon: "/assets/logo.png",
+    icon: "/assets/logo.webp",
   },
 };
 

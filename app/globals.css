@@ -1238,7 +1238,11 @@ button {
         #101114;
 }
 
-.work-image img {
+.work-image img,
+.work-image .object-cover {
+    position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1507,11 +1511,13 @@ button {
         box-shadow .4s ease;
 }
 
-.team-avatar.team-photo img {
+.team-avatar.team-photo img,
+.team-avatar.team-photo .object-cover {
+    position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
-
-    display: block;
 
     object-fit: cover;
 

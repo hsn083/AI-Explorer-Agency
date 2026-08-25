@@ -1,11 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProfileFooter() {
   return (
     <footer className="profile-footer">
       <div className="profile-footer-container">
         <div className="profile-footer-brand">
-          <img src="/assets/logo.png" alt="AI Explorer Logo" />
+          <Image 
+            src="/assets/logo.webp" 
+            alt="AI Explorer Logo" 
+            width={42}
+            height={42}
+          />
           <span className="profile-footer-name">AI EXPLORER AGENCY</span>
         </div>
         <div className="profile-footer-links">

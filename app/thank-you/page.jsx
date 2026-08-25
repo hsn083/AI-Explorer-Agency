@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Thank You - AI EXPLORER AGENCY",
@@ -10,7 +11,14 @@ export default function ThankYouPage() {
       <nav className="navbar">
         <div className="nav-container">
           <Link href="/" className="nav-logo">
-            <img src="/assets/logo.png" alt="AI Explorer Logo" className="logo-img" />
+            <Image 
+              src="/assets/logo.webp" 
+              alt="AI Explorer Logo" 
+              width={42}
+              height={42}
+              className="logo-img"
+              priority
+            />
             <span className="agency-name">AI EXPLORER AGENCY</span>
           </Link>
         </div>
@@ -19,7 +27,14 @@ export default function ThankYouPage() {
       <main className="hero">
         <div className="hero-container">
           <div className="hero-logo">
-            <img src="/assets/logo.png" alt="AI Explorer Logo" className="hero-logo-img" />
+            <Image 
+              src="/assets/logo.webp" 
+              alt="AI Explorer Logo" 
+              width={58}
+              height={58}
+              className="hero-logo-img"
+              priority
+            />
           </div>
 
           <span className="hero-eyebrow">AI EXPLORER AGENCY</span>
@@ -43,7 +58,13 @@ export default function ThankYouPage() {
         <div className="footer-container">
           <div className="footer-top">
             <div className="footer-brand">
-              <img src="/assets/logo.png" alt="AI Explorer Logo" className="footer-logo" />
+              <Image 
+                src="/assets/logo.webp" 
+                alt="AI Explorer Logo" 
+                width={42}
+                height={42}
+                className="footer-logo"
+              />
               <span className="footer-name">AI EXPLORER AGENCY</span>
             </div>
             <div className="footer-links">
