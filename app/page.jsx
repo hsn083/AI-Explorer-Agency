@@ -22,7 +22,7 @@ export default function HomePage() {
             <span className="hero-eyebrow">AI • WEB • DIGITAL SOLUTIONS</span>
 
             <h1 className="hero-title">
-              Websites Built to Bring In Customers —<span>Not Just Look Good.</span>
+              Websites Built to Bring In Customers — Not Just Look Good.
             </h1>
 
             <p className="hero-subtitle">
@@ -88,7 +88,7 @@ export default function HomePage() {
                   doesn&apos;t require a developer every time you want to change something.
                 </p>
 
-                <Link href="#contact" className="text-link">
+                <Link href="#contact" className="btn btn-secondary">
                   Let&apos;s build something meaningful
                   <span>→</span>
                 </Link>

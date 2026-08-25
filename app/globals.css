@@ -219,7 +219,7 @@ button {
 .agency-name {
     font-family: 'Cinzel', serif;
 
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 
     font-weight: 600;
 
@@ -244,7 +244,7 @@ button {
 .nav-link {
     position: relative;
 
-    font-size: 0.78rem;
+    font-size: 0.875rem;
 
     font-weight: 700;
 
@@ -252,7 +252,7 @@ button {
 
     letter-spacing: 0.08em;
 
-    color: #c8c7c3;
+    color: var(--text-soft);
 
     transition: color var(--transition);
 }
@@ -298,9 +298,9 @@ button {
 
     background: var(--gold);
 
-    color: #15130e;
+    color: var(--bg);
 
-    font-size: 0.76rem;
+    font-size: 0.875rem;
 
     font-weight: 800;
 
@@ -372,7 +372,7 @@ button {
 .section-heading {
     max-width: 720px;
 
-    margin: 0 auto 64px;
+    margin: 0 auto 40px;
 
     text-align: center;
 }
@@ -385,7 +385,7 @@ button {
 
     font-family: 'Manrope', sans-serif;
 
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 
     font-weight: 800;
 
@@ -425,7 +425,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: 0.98rem;
+    font-size: 1rem;
 
     line-height: 1.85;
 }
@@ -473,7 +473,7 @@ button {
 
     border-radius: 999px;
 
-    font-size: 0.78rem;
+    font-size: 0.875rem;
 
     font-weight: 800;
 
@@ -492,7 +492,7 @@ button {
 .btn-primary {
     background: var(--gold);
 
-    color: #11100c;
+    color: var(--bg);
 
     box-shadow:
         0 10px 35px rgba(217,180,95,.12);
@@ -530,11 +530,11 @@ button {
 
     border: 1px solid rgba(255,255,255,.12);
 
-    color: #dddcd7;
+    color: var(--text-soft);
 
     background: rgba(255,255,255,.015);
 
-    font-size: 0.73rem;
+    font-size: 0.875rem;
 }
 
 .btn-outline:hover {
@@ -638,7 +638,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    border-radius: 22px;
+    border-radius: var(--radius-md);
 
     border: 1px solid var(--border-gold);
 
@@ -686,23 +686,17 @@ button {
     color: var(--white);
 }
 
-.hero-title span {
-    display: block;
-
-    color: var(--gold);
-}
-
 .hero-subtitle {
     max-width: 700px;
 
     margin: 27px auto 0;
 
-    color: #d4d2cd;
+    color: var(--text-soft);
 
     font-size: clamp(
         1rem,
         2vw,
-        1.22rem
+        1.25rem
     );
 
     line-height: 1.7;
@@ -715,7 +709,7 @@ button {
 
     color: var(--text-muted);
 
-    font-size: 0.88rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 }
@@ -773,7 +767,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.55rem;
+    font-size: 1.5rem;
 
     font-weight: 600;
 }
@@ -785,7 +779,7 @@ button {
 
     color: var(--text-muted);
 
-    font-size: 0.68rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -812,7 +806,7 @@ button {
 
     gap: 90px;
 
-    align-items: center;
+    align-items: start;
 }
 
 .about-content .section-title {
@@ -826,7 +820,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .95rem;
+    font-size: 1rem;
 
     line-height: 1.9;
 }
@@ -842,7 +836,7 @@ button {
 
     color: var(--gold);
 
-    font-size: .8rem;
+    font-size: 0.875rem;
 
     font-weight: 800;
 
@@ -915,7 +909,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .about-card-line {
@@ -936,7 +930,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.8rem;
+    font-size: 1.875rem;
 
     font-weight: 500;
 
@@ -954,7 +948,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .9rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 }
@@ -982,15 +976,15 @@ button {
 .about-point span {
     color: var(--gold);
 
-    font-size: .7rem;
+    font-size: 0.75rem;
 
     font-weight: 800;
 }
 
 .about-point p {
-    color: #d2d0cb;
+    color: var(--text-soft);
 
-    font-size: .8rem;
+    font-size: 0.875rem;
 }
 
 
@@ -1091,7 +1085,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: .75rem;
+    font-size: 0.875rem;
 }
 
 .service-icon {
@@ -1103,7 +1097,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    border-radius: 17px;
+    border-radius: var(--radius-sm);
 
     border: 1px solid var(--border-gold);
 
@@ -1129,7 +1123,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.35rem;
+    font-size: 1.5rem;
 
     font-weight: 500;
 
@@ -1143,7 +1137,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .86rem;
+    font-size: 1rem;
 
     line-height: 1.8;
 }
@@ -1167,7 +1161,7 @@ button {
 
     color: var(--text-muted);
 
-    font-size: .62rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -1291,7 +1285,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    border-radius: 28px;
+    border-radius: var(--radius-md);
 
     border: 1px solid var(--border-gold);
 
@@ -1299,7 +1293,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.8rem;
+    font-size: 1.875rem;
 
     background:
         rgba(8,9,11,.7);
@@ -1336,9 +1330,9 @@ button {
 
     backdrop-filter: blur(10px);
 
-    color: #d5d3ce;
+    color: var(--text-soft);
 
-    font-size: .63rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -1358,7 +1352,7 @@ button {
 
     color: var(--gold-dark);
 
-    font-size: .62rem;
+    font-size: 0.75rem;
 
     font-weight: 800;
 
@@ -1374,7 +1368,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.45rem;
+    font-size: 1.5rem;
 
     font-weight: 500;
 }
@@ -1386,7 +1380,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .84rem;
+    font-size: 1rem;
 
     line-height: 1.75;
 }
@@ -1549,7 +1543,7 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .team-name {
@@ -1557,9 +1551,9 @@ button {
 
     font-family: 'Cinzel', serif;
 
-    font-size: 1.2rem;
+    font-size: 1.625rem;
 
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .team-role {
@@ -1567,13 +1561,11 @@ button {
 
     color: var(--gold);
 
-    font-size: .66rem;
+    font-size: 0.75rem;
 
     font-weight: 800;
 
     letter-spacing: .11em;
-
-    text-transform: uppercase;
 }
 
 .team-bio {
@@ -1583,7 +1575,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .78rem;
+    font-size: 0.875rem;
 
     line-height: 1.75;
 }
@@ -1642,7 +1634,7 @@ button {
 
     color: var(--text-soft);
 
-    font-size: .9rem;
+    font-size: 1rem;
 
     line-height: 1.85;
 }
@@ -1664,9 +1656,9 @@ button {
 
     gap: 15px;
 
-    color: #d4d2cd;
+    color: var(--text-soft);
 
-    font-size: .78rem;
+    font-size: 0.875rem;
 }
 
 .contact-item > span:last-child {
@@ -1680,7 +1672,7 @@ button {
 .contact-item small {
     color: var(--text-muted);
 
-    font-size: .62rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -1702,7 +1694,7 @@ button {
 
     border: 1px solid var(--border-gold);
 
-    border-radius: 13px;
+    border-radius: var(--radius-sm);
 
     color: var(--gold);
 
@@ -1739,9 +1731,9 @@ button {
 }
 
 .form-group label {
-    color: #c9c7c1;
+    color: var(--text-soft);
 
-    font-size: .7rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -1755,7 +1747,7 @@ button {
 
     border: 1px solid var(--border);
 
-    border-radius: 12px;
+    border-radius: var(--radius-sm);
 
     outline: none;
 
@@ -1766,7 +1758,7 @@ button {
 
     padding: 13px 15px;
 
-    font-size: .78rem;
+    font-size: 0.875rem;
 
     transition:
         border-color var(--transition),
@@ -1787,7 +1779,7 @@ button {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #60615f;
+    color: var(--text-muted);
 }
 
 .form-group select {
@@ -1796,8 +1788,8 @@ button {
     cursor: pointer;
 
     background-image:
-        linear-gradient(45deg, transparent 50%, #777 50%),
-        linear-gradient(135deg, #777 50%, transparent 50%);
+        linear-gradient(45deg, transparent 50%, var(--text-muted) 50%),
+        linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
 
     background-position:
         calc(100% - 18px) 20px,
@@ -1853,11 +1845,9 @@ button {
 }
 
 .footer-top {
-    display: grid;
+    display: flex;
 
-    grid-template-columns:
-        1.5fr
-        .7fr;
+    justify-content: space-between;
 
     gap: 80px;
 
@@ -1886,7 +1876,7 @@ button {
 
     color: var(--white);
 
-    font-size: .85rem;
+    font-size: 0.875rem;
 
     font-weight: 600;
 
@@ -1900,7 +1890,7 @@ button {
 
     color: var(--text-muted);
 
-    font-size: .78rem;
+    font-size: 0.875rem;
 
     line-height: 1.8;
 }
@@ -1924,12 +1914,12 @@ button {
     gap: 10px;
 }
 
-.footer-column h4 {
+.footer-column h3 {
     margin-bottom: 7px;
 
     color: var(--gold);
 
-    font-size: .68rem;
+    font-size: 0.75rem;
 
     font-weight: 800;
 
@@ -1941,7 +1931,7 @@ button {
 .footer-column a {
     color: var(--text-muted);
 
-    font-size: .76rem;
+    font-size: 0.875rem;
 
     transition:
         color var(--transition),
@@ -1965,9 +1955,9 @@ button {
 
     padding-top: 25px;
 
-    color: #5f605d;
+    color: var(--text-muted);
 
-    font-size: .66rem;
+    font-size: 0.75rem;
 }
 
 
@@ -2654,7 +2644,7 @@ select:focus-visible {
 
 .profile-image-wrapper {
     position: relative;
-    border-radius: 24px;
+    border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid var(--border-gold);
     box-shadow: var(--shadow);
@@ -2691,7 +2681,7 @@ select:focus-visible {
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-gold);
     padding: 12px 20px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-family: 'Manrope', sans-serif;
     font-size: 0.8rem;
     font-weight: 600;

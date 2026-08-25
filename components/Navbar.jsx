@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="nav-container">
         <Link href="/#home" className="nav-logo" onClick={closeMenu}>
           <img src="/assets/logo.png" alt="AI Explorer Agency Logo" className="logo-img" />
-          <span className="agency-name">AI EXPLORER AGENCY</span>
+          <span className="agency-name">AI Explorer Agency</span>
         </Link>
 
         <div className={`nav-links${menuOpen ? " active" : ""}`}>

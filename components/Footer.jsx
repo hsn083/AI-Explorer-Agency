@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/#home" className="footer-logo">
               <img src="/assets/logo.png" alt="AI Explorer Agency Logo" className="footer-logo-img" />
-              <span className="footer-agency-name">AI EXPLORER AGENCY</span>
+              <span className="footer-agency-name">AI Explorer Agency</span>
             </Link>
 
             <p className="footer-description">
@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div className="footer-links">
             <div className="footer-column">
-              <h4>Explore</h4>
+              <h3>Explore</h3>
               <Link href="/#about">About</Link>
               <Link href="/#services">Services</Link>
               <Link href="/#work">Projects</Link>
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-column">
-              <h4>Start</h4>
+              <h3>Start</h3>
               <Link href="/#contact">Contact</Link>
               <Link href="/#work">Our Work</Link>
               <a href="mailto:hello@aiexplorer.website">Email Us</a>
