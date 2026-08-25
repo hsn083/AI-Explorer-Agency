@@ -19,7 +19,7 @@ export default function HomePage() {
               <img src="/assets/logo.png" alt="AI Explorer Agency" className="hero-logo-img" />
             </div>
 
-            <span className="hero-eyebrow">AI • WEB • DIGITAL SOLUTIONS</span>
+            <span className="hero-eyebrow">AI • Web • Digital Solutions</span>
 
             <h1 className="hero-title">
               Websites Built to Bring In Customers — Not Just Look Good.
@@ -66,8 +66,7 @@ export default function HomePage() {
                 <span className="section-eyebrow">ABOUT AI EXPLORER</span>
 
                 <h2 className="section-title">
-                  Technology That Actually
-                  <span>Helps Your Business.</span>
+                  Technology That Actually <span>Helps Your Business.</span>
                 </h2>
 
                 <p className="about-text">
@@ -96,13 +95,12 @@ export default function HomePage() {
 
               <div className="about-card">
                 <div className="about-card-top">
-                  <span className="about-card-number">01</span>
+                  <span className="about-card-number">PROCESS</span>
                   <span className="about-card-line"></span>
                 </div>
 
                 <h3>
-                  From Idea to
-                  <span>Live Website.</span>
+                  From Idea to <span>Live Website.</span>
                 </h3>
 
                 <p>
@@ -313,7 +311,7 @@ export default function HomePage() {
                   </a>
 
                   <div className="contact-item">
-                    <span className="contact-icon">↗</span>
+                    <span className="contact-icon">🌍</span>
                     <span>
                       <small>Based Online</small>
                       Working with clients worldwide

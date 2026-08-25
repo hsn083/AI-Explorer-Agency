@@ -907,9 +907,15 @@ button {
 .about-card-number {
     color: var(--gold);
 
-    font-family: 'Cinzel', serif;
+    font-family: 'Manrope', sans-serif;
 
-    font-size: 1rem;
+    font-size: 0.75rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.22em;
+
+    text-transform: uppercase;
 }
 
 .about-card-line {
@@ -1326,7 +1332,7 @@ button {
 
     border: 1px solid rgba(255,255,255,.1);
 
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.4) !important;
 
     backdrop-filter: blur(10px);
 
@@ -1343,6 +1349,10 @@ button {
 
 .work-card-content {
     padding: 29px;
+
+    display: flex;
+
+    flex-direction: column;
 }
 
 .project-meta {
@@ -1374,8 +1384,6 @@ button {
 }
 
 .work-description {
-    min-height: 54px;
-
     margin-top: 10px;
 
     color: var(--text-soft);
@@ -1386,7 +1394,7 @@ button {
 }
 
 .work-card .btn {
-    margin-top: 22px;
+    margin-top: auto;
 }
 
 
@@ -1580,6 +1588,16 @@ button {
     line-height: 1.75;
 }
 
+.team-content {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    width: 100%;
+}
+
 .team-card .btn {
     margin-top: auto;
 }
@@ -1720,6 +1738,12 @@ button {
         repeat(2, 1fr);
 
     gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    margin-bottom: 0;
 }
 
 .form-group {
@@ -1728,6 +1752,12 @@ button {
     flex-direction: column;
 
     gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.form-group:last-of-type {
+    margin-bottom: 0;
 }
 
 .form-group label {
