@@ -547,6 +547,24 @@ button {
     transform: translateY(-2px);
 }
 
+.btn-whatsapp {
+    background: #25D366;
+
+    color: white;
+
+    box-shadow:
+        0 10px 35px rgba(37,211,102,.12);
+}
+
+.btn-whatsapp:hover {
+    background: #20bd5a;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 45px rgba(37,211,102,.2);
+}
+
 
 /* =========================================================
    HERO
@@ -1862,6 +1880,20 @@ button {
     margin-top: 3px;
 }
 
+.form-submit-row {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 3px;
+}
+
+.form-submit-row .form-submit {
+    margin-top: 0;
+}
+
 
 /* =========================================================
    FOOTER
@@ -2280,6 +2312,16 @@ button {
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .form-submit-row {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .form-submit-row .form-submit {
+        width: 100%;
     }
 
     .contact-wrapper {
@@ -3129,5 +3171,121 @@ select:focus-visible {
     .profile-cta-primary,
     .profile-cta-secondary {
         transition: none;
+    }
+}
+
+/* =========================================================
+   FLOATING WHATSAPP BUTTON
+========================================================= */
+
+.whatsapp-float {
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    width: 60px;
+
+    height: 60px;
+
+    background: #25D366;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 4px 12px rgba(37,211,102,.3),
+        0 8px 24px rgba(37,211,102,.2);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+
+    box-shadow:
+        0 6px 16px rgba(37,211,102,.4),
+        0 12px 32px rgba(37,211,102,.3);
+}
+
+.whatsapp-float svg {
+    width: 32px;
+
+    height: 32px;
+
+    fill: white;
+}
+
+.whatsapp-float::after {
+    content: "Chat on WhatsApp";
+
+    position: absolute;
+
+    right: 70px;
+
+    background: rgba(0,0,0,.9);
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 0.75rem;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity var(--transition),
+        visibility var(--transition);
+
+    pointer-events: none;
+}
+
+.whatsapp-float:hover::after {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+
+        right: 20px;
+
+        width: 50px;
+
+        height: 50px;
+    }
+
+    .whatsapp-float svg {
+        width: 26px;
+
+        height: 26px;
+    }
+
+    .whatsapp-float::after {
+        display: none;
     }
 }
