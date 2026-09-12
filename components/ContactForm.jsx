@@ -13,6 +13,7 @@ export default function ContactForm() {
 
     const name = form.name.value.trim();
     const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
     const project = form.project.value;
     const message = form.message.value.trim();
 
@@ -24,6 +25,11 @@ export default function ContactForm() {
 
     if (!email || !email.includes('@')) {
       form.email.reportValidity();
+      return;
+    }
+
+    if (!phone) {
+      form.phone.reportValidity();
       return;
     }
 
@@ -48,10 +54,11 @@ export default function ContactForm() {
 
     const selectedService = serviceLabels[project] || project || "Not specified";
 
-    const whatsappMessage = `New Project Inquiry - AI Explorer Agency
+    const whatsappMessage = `*New Project Inquiry - AI Explorer Agency*
 
 Name: ${name}
 Email: ${email}
+Phone: ${phone}
 Service: ${selectedService}
 
 Project Details:
@@ -99,6 +106,17 @@ Please get back to me regarding this project.`;
             required
           />
         </div>
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
       </div>
 
       <div className="form-group">
